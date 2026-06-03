@@ -149,3 +149,108 @@ a { text-decoration: none; color: inherit; }
     .profile-hero { flex-direction: column; text-align: center; }
     .nav-container { flex-direction: column; gap: 1rem; }
 }
+/* --- CẬP NHẬT GIAO DIỆN TRANG CHỦ (HERO SECTION) --- */
+
+/* Chia đôi màn hình */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Hiệu ứng chữ nổi bật: Chuyển màu từ Trắng sang Vàng Gold */
+.gradient-text {
+    background: linear-gradient(90deg, #ffffff 0%, var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-shadow: none; /* Bỏ viền bóng để gradient lên màu sắc nét nhất */
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+.hero-badge {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--accent-color);
+    padding: 0.35rem 1rem;
+    border-radius: 4px;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: monospace;
+    margin-bottom: 1.5rem;
+}
+
+/* Nút bấm (Button) dạng viền Neon sáng */
+.cta-button {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 0.75rem 2rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: monospace;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(234, 179, 8, 0.2);
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    color: #000;
+    box-shadow: 0 0 25px rgba(234, 179, 8, 0.6);
+    transform: translateY(-3px);
+}
+
+/* Hiệu ứng hình ảnh lơ lửng */
+.hero-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-chip {
+    width: 100%;
+    max-width: 320px;
+    animation: float 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 30px rgba(16, 185, 129, 0.3)) invert(0.8) sepia(1) hue-rotate(80deg) saturate(3); /* Lọc màu icon gốc sang màu xanh lá công nghệ */
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Tự động sắp xếp lại khi xem trên điện thoại */
+@media (max-width: 768px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-text {
+        align-items: center;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-graphic {
+        order: -1; /* Đẩy hình ảnh lên trên cùng khi xem bằng điện thoại */
+        margin-bottom: 2rem;
+    }
+}
