@@ -112,8 +112,8 @@ a { text-decoration: none; color: inherit; }
 .profile-img-box img {
     width: 100%; 
     height: 100%; 
-    object-fit: cover; /* Đảm bảo ảnh phủ kín khung mà không bị méo */
-    object-position: center top; /* Đẩy trọng tâm ảnh lên trên để không bị cắt mất phần đầu/khuôn mặt */
+    object-fit: cover; /* Vẫn giữ lệnh này để ảnh phủ kín khung */
+    object-position: center top; /* Lệnh "thần thánh" giúp neo đỉnh ảnh sát với mép trên của khung */
     border-radius: 12px;
     border: 3px solid var(--primary-color);
     box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
