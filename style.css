@@ -254,3 +254,23 @@ a { text-decoration: none; color: inherit; }
         margin-bottom: 2rem;
     }
 }
+/* --- CĂN CHỈNH NHÓM NÚT BẤM --- */
+.button-group {
+    display: flex;
+    gap: 1.5rem; /* Khoảng cách hoàn hảo giữa 2 nút */
+    margin-top: 1rem; /* Đẩy cách đoạn văn ra một chút cho thoáng */
+    flex-wrap: wrap; /* Tự động xếp xuống dòng nếu xem trên điện thoại dọc */
+}
+
+/* Nút bấm phụ (Màu xanh công nghệ) */
+.secondary-btn {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+}
+
+.secondary-btn:hover {
+    background-color: var(--accent-color);
+    color: #000;
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+}
