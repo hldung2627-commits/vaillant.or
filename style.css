@@ -274,3 +274,58 @@ a { text-decoration: none; color: inherit; }
     color: #000;
     box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
 }
+/* --- VẼ VI MẠCH BẰNG PURE CSS --- */
+.hero-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.pure-css-chip {
+    width: 180px;
+    height: 180px;
+    background-color: var(--card-bg);
+    border: 3px solid var(--accent-color);
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.3), inset 0 0 20px rgba(16, 185, 129, 0.2);
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Lõi vi mạch */
+.chip-core {
+    width: 90px;
+    height: 90px;
+    background-color: var(--bg-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 800;
+    box-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
+}
+
+/* Thuật toán vẽ chân rết (Pins) 2 bên hông */
+.pure-css-chip::before, .pure-css-chip::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 120px;
+    background: repeating-linear-gradient(
+        to bottom,
+        var(--text-light) 0,
+        var(--text-light) 8px,
+        transparent 8px,
+        transparent 16px
+    );
+}
+
+.pure-css-chip::before { left: -15px; } /* Chân bên trái */
+.pure-css-chip::after { right: -15px; }  /* Chân bên phải */
