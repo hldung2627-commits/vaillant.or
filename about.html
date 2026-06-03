@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu | Hoàng Long Dũng Portfolio</title>
+    <title>Giới thiệu | IC Profile - Hoàng Long Dũng</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Thanh điều hướng -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">HLD<span>.</span></div>
+            <div class="nav-logo">HLD_<span>CORE</span></div>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="index.html">Trang chủ</a></li>
                 <li class="nav-item"><a href="about.html" class="active">Giới thiệu</a></li>
@@ -19,49 +20,64 @@
         </div>
     </nav>
 
+    <!-- Nội dung chính -->
     <main class="container">
         <div class="page-header">
-            <h1>Giới thiệu bản thân</h1>
-            <p>Thông tin nền tảng, định hướng học tập và định hướng phát triển cá nhân.</p>
+            <h1>Hardware & System Profile</h1>
+            <p>> System.out.println("Thông tin nền tảng & Định hướng phát triển");_</p>
         </div>
 
         <div class="about-grid">
+            <!-- Khối nội dung chính bên trái -->
             <div class="about-card">
-                <h2 class="about-section-title">Học tập & Định hướng nghề nghiệp</h2>
-                <p>Hiện tại, tôi đang theo học chuyên ngành Điện tử Viễn thông tại UET. Mục tiêu lớn nhất của tôi khi xây dựng không gian Portfolio số này là hệ thống hóa toàn bộ các kỹ năng công nghệ cốt lõi, áp dụng trực tiếp các mô hình AI tiên tiến vào các tác vụ thực tế nhằm tối ưu hóa hiệu suất nghiên cứu và xử lý công việc.</p>
                 
-                <h2 class="about-section-title">Câu lạc bộ & Hoạt động ngoại khóa</h2>
-                <p>[Dành chỗ để bạn tự cập nhật thông tin chi tiết về các dự án nghiên cứu nhỏ, các hoạt động kỹ thuật tham gia tại câu lạc bộ chuyên ngành như UETCHIP+, hoặc các hoạt động tình nguyện ý nghĩa mà bạn từng trải nghiệm].</p>
+                <!-- Khu vực chứa Ảnh và Thông tin cơ bản -->
+                <div class="profile-hero">
+                    <div class="profile-img-box">
+                        <!-- Tên tệp ảnh của bạn sẽ thay vào thuộc tính src dưới đây -->
+                        <img src="avatar.jpg" alt="Hoàng Long Dũng">
+                        <div class="status-dot"></div>
+                    </div>
+                    
+                    <div class="profile-details">
+                        <p>👤 <strong>Họ và tên:</strong> <span class="highlight-text">Hoàng Long Dũng</span></p>
+                        <p>🎓 <strong>Khóa học:</strong> K70</p>
+                        <p>🏛️ <strong>Chuyên ngành:</strong> Điện tử Viễn thông (CN9) - UET</p>
+                        <p>📍 <strong>Quê quán:</strong> Hà Nội</p>
+                        <p>🎯 <strong>Định hướng:</strong> <span class="tech-text">[Kỹ sư thiết kế Vi mạch - IC Design]</span></p>
+                    </div>
+                </div>
+
+                <h2 class="about-section-title">Học tập & Tầm nhìn chuyên môn</h2>
+                <p>Mục tiêu cốt lõi của tôi là làm chủ luồng thiết kế vi mạch (IC Design Flow) và hệ thống nhúng. Thông qua việc vận dụng các công cụ kỹ thuật số và trí tuệ nhân tạo, tôi định hướng xây dựng các giải pháp phần cứng tối ưu, từ kiến trúc tập lệnh đến mức độ vật lý.</p>
                 
-                <h2 class="about-section-title">Mục tiêu của Portfolio</h2>
-                <p>Portfolio kỹ thuật số này không chỉ đơn thuần là một công cụ báo cáo kết quả bài tập thành phần, mà còn đóng vai trò như một không gian lưu trữ minh chứng năng lực cá nhân một cách tường minh, khoa học và chuyên nghiệp phục vụ cho chặng đường tương lai.</p>
+                <h2 class="about-section-title">Hoạt động ngoại khóa</h2>
+                <p>Hiện đang tham gia tích cực tại <strong>UETCHIP+</strong>. Đây là môi trường hoàn hảo để tôi trau dồi kiến thức thực tế về thiết kế mạch, lập trình vi điều khiển và phát triển kỹ năng làm việc nhóm với các dự án phần cứng chuyên sâu.</p>
             </div>
 
+            <!-- Khối kỹ năng bên phải (Sidebar) -->
             <div class="sidebar-space">
-                <div class="sidebar-card" style="margin-bottom: 1.5rem;">
-                    <h2 class="about-section-title" style="margin-top: 0;">Sở thích học thuật</h2>
+                <div class="sidebar-card" style="margin-bottom: 2rem;">
+                    <h2 class="about-section-title" style="margin-top: 0;">Khối kiến thức nền tảng</h2>
                     <ul class="interest-list">
-                        <li>• Vật lý đại cương</li>
-                        <li>• Kỹ thuật điện</li>
-                        <li>• Phân tích mạch</li>
+                        <li>Vật lý đại cương</li>
+                        <li>Kỹ thuật điện & Phân tích mạch</li>
+                        <li>Giải tích & Xử lý tín hiệu</li>
                     </ul>
                 </div>
 
                 <div class="sidebar-card">
-                    <h2 class="about-section-title" style="margin-top: 0;">Kỹ năng công nghệ</h2>
+                    <h2 class="about-section-title" style="margin-top: 0;">Công cụ & Kỹ năng số</h2>
                     <ul class="skill-list">
-                        <li>• Lập trình Python</li>
-                        <li>• Mô phỏng MATLAB</li>
-                        <li>• Thiết kế mạch & Nhúng</li>
+                        <li>Lập trình Python (NumPy)</li>
+                        <li>Mô phỏng MATLAB</li>
+                        <li>Google AI Pro & Khai thác Prompt</li>
+                        <li>Quản trị dự án (Trello/Kanban)</li>
                     </ul>
                 </div>
             </div>
         </div>
     </main>
-
-    <footer class="footer">
-        <p>&copy; 2026 Hoàng Long Dũng. Mã nguồn được tối ưu hóa cho mục đích học tập.</p>
-    </footer>
 
 </body>
 </html>
