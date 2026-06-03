@@ -258,7 +258,7 @@ a { text-decoration: none; color: inherit; }
 .button-group {
     display: flex;
     gap: 1.5rem; /* Khoảng cách hoàn hảo giữa 2 nút */
-    margin-top: 1rem; /* Đẩy cách đoạn văn ra một chút cho thoáng */
+    margin-top: 3rem; /* Đẩy cách đoạn văn ra một chút cho thoáng */
     flex-wrap: wrap; /* Tự động xếp xuống dòng nếu xem trên điện thoại dọc */
 }
 
