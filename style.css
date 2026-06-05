@@ -329,3 +329,18 @@ a { text-decoration: none; color: inherit; }
 
 .pure-css-chip::before { left: -15px; } /* Chân bên trái */
 .pure-css-chip::after { right: -15px; }  /* Chân bên phải */
+.ex-link {
+    color: var(--primary-color) !important; /* Đổi sang màu Vàng Gold */
+    font-weight: bold;
+    font-family: monospace; /* Font chữ chuẩn dân kỹ thuật */
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.ex-link:hover {
+    color: var(--accent-color) !important; /* Di chuột vào chuyển Xanh Neon */
+    text-shadow: 0 0 8px rgba(16, 185, 129, 0.5); /* Phát sáng nhẹ */
+    transform: translateX(5px); /* Hiệu ứng trượt mũi tên sang phải cực mượt */
+}
