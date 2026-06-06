@@ -360,3 +360,26 @@ a { text-decoration: none; color: inherit; }
 .container {
     animation: canvaPopUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
+/* --- ĐỘ THANH CUỘN (SCROLLBAR) CHUẨN CYBERPUNK --- */
+
+/* Kích thước của toàn bộ thanh cuộn */
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+/* Phần rãnh trượt (Background) */
+::-webkit-scrollbar-track {
+    background: var(--bg-color); /* Trùng với màu nền tối của web */
+    border-left: 1px solid rgba(16, 185, 129, 0.1); /* Kẻ viền mờ cho tiệp với lưới */
+}
+
+/* Phần thanh cầm để kéo (Thumb) */
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color); /* Màu Xanh Neon */
+    border-radius: 10px;
+}
+
+/* Hiệu ứng khi di chuột vào thanh kéo */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color); /* Chuyển sang Vàng Gold */
+}
