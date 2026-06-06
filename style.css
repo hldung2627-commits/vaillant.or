@@ -343,6 +343,7 @@ a { text-decoration: none; color: inherit; }
     color: var(--accent-color) !important; /* Di chuột vào chuyển Xanh Neon */
     text-shadow: 0 0 8px rgba(16, 185, 129, 0.5); /* Phát sáng nhẹ */
     transform: translateX(5px); /* Hiệu ứng trượt mũi tên sang phải cực mượt */
+}
 /* --- HIỆU ỨNG CHUYỂN TRANG MƯỢT NHƯ CANVA --- */
 @keyframes canvaPopUp {
     0% {
