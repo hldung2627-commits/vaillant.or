@@ -344,3 +344,45 @@ a { text-decoration: none; color: inherit; }
     text-shadow: 0 0 8px rgba(16, 185, 129, 0.5); /* Phát sáng nhẹ */
     transform: translateX(5px); /* Hiệu ứng trượt mũi tên sang phải cực mượt */
 }
+/* --- HIỆU ỨNG KHỞI ĐỘNG HỆ THỐNG (CYBER BOOT-UP) --- */
+@keyframes cyberBootUp {
+    0% {
+        opacity: 0;
+        transform: scaleY(0.05) scaleX(0.8) translateY(30px);
+        filter: blur(10px);
+    }
+    60% {
+        opacity: 1;
+        transform: scaleY(1.02) scaleX(1.01) translateY(-5px);
+        filter: blur(2px);
+        /* Lóe sáng màu Xanh Neon một nhịp khi mở ra */
+        filter: drop-shadow(0 0 15px rgba(16, 185, 129, 0.6)); 
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1) scaleX(1) translateY(0);
+        filter: blur(0);
+        filter: drop-shadow(0 0 0 transparent);
+    }
+}
+
+.container {
+    animation: cyberBootUp 0.65s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    transform-origin: center;
+}
+
+/* Thanh menu bật chế độ "dịch chuyển tức thời" từ trên xuống */
+@keyframes slideDownNav {
+    0% { 
+        opacity: 0; 
+        transform: translateY(-100%); 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.navbar {
+    animation: slideDownNav 0.5s ease-out forwards;
+}
